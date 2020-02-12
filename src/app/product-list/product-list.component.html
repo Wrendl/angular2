@@ -4,15 +4,17 @@
 
   <h3>
     <a [title]="product.name + ' details'">
-      {{ product.name }}
+      {{ product.name }} 
     </a>
   </h3>
 
   <p *ngIf="product.description">
     <a href="product.ll">
       Description: {{ product.description }}
+      {{ product.rating }}
     </a>
   </p>
+  <p >
 
   <button (click)="share(product)">
     Share
